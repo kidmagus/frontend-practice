@@ -1,0 +1,266 @@
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color:  #1E0E62;
+    --secondary:  #15143966;
+    --x-color: #EBEAED;
+    ;
+
+}
+
+body {
+  
+  font-family: "DM Sans", sans-serif;
+  
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 115px 0px 40px;
+}
+
+.header__title{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.2926828861236572px;
+    text-align: center;
+    
+
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.header__links a {
+    text-decoration: none; 
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.content {
+    display: flex;
+   
+   
+
+}
+
+main {
+    width: 700px;
+    height: 1719.6px;
+    padding: 91px 115px 585px 158.4px;
+
+    
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+h6{
+    color: var(--secondary);
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+    font-weight:800;
+
+}
+
+.article__1 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+h4 {
+  
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--text-color);
+
+}
+
+.article__2 {
+    color: var(--secondary);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+aside {
+    padding-top: 94px;
+  
+}
+
+.aside__title {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: var(--secondary);
+    font-weight: 700;
+}
+
+.post__section {
+    display: flex;
+   align-items: center;
+    margin-top: 15px;
+  
+    
+}
+
+.post__section__desc {
+    width: 370px;
+    height: 109.6px;
+    
+}
+
+.post__section img {
+    width: 170px;
+    height: 105px;
+    padding: 2px 12px 2px 0px;
+
+}
+
+.post__section__title {
+    width: 181px;
+    margin-top: 0;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-weight: 500;
+
+   
+}
+
+.post__section__date {
+    
+    font-size: 16px;
+    line-height: 10px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--secondary);
+    width: 97px;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.form__section {
+    width: 370px;
+    height: 186px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border: solid 2px  var(--x-color);
+    border-radius: 12px;
+    padding: 10px;
+   
+}
+
+.form__section__title {
+
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 30px 30px 2px 30px;
+}
+
+.form__section__desc {
+ 
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--secondary);
+    padding: 0px 30px 15px 30px;
+
+}
+
+.form__section__textbox {
+    width: 220px;
+    height: 50px;
+    border: 2px solid var(--x-color);
+    border-radius: 110px;
+    padding: 2px 0px 2px 20px;
+    margin-left: 30px;
+}
+
+.form__section__textbox::placeholder {
+    
+    font-family: DM Sans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--secondary);
+}
+
+.form__section__button {
+    width: 80px;
+    height: 50px;
+    border-radius: 100px;
+    background-color:  #25DAC5;
+    border: none;
+    color:white;
+    font-family: DM Sans;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 4px;
+    padding: 2px 2px 2px 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.form__section__button:hover{
+    background-color: #126d62    ;
+}
+
+.load__button {
+    width: 130px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #E93A7D;
+    margin-top: 26.4px;
+    border: none;
+    color: #FFFFFF;
+    font-family: DM Sans;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.load__button:hover{
+    background-color: #ba2e64;
+}
+
