@@ -6,179 +6,191 @@
 
 :root {
    --bg-color:  #2F1893;
-   --header-text-color: #FFFFFF;
-    --section-title-color:  #1E0E62;
-    --section--text-color:  #15143966;
-
+   --text-color:#1E0E62;
 
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-  margin: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 760px;
+   
+ 
 }
 
 
-header {
-    height: 643px;
-    text-align: center;
-    justify-content: center;
+
+.header {
     background-color: var(--bg-color);
     display: flex;
-    align-items: center;
-    
-}   
+ 
+}
 
-h1 {
+ 
+
+.header__title {
+  
+    color: var(--bg-color); 
     font-size: 58px;
     line-height: 70px;
     letter-spacing: -1px;
     text-align: left;
-    color: var(--header-text-color);
-    width: 780px;
-    height: 140px;
-    font-weight: 690;
-  /*  padding: 100px 305px 0px 315px; */
-
+    color:var(--white);
+    margin-bottom: 5px;
 }
 
-h6 {
-    color: var(--header-text-color);
+.header__subheading {
+    margin-top: 4px;
+    color: var(--white);
     font-size: 14px;
-    line-height: 1px;
+    line-height: 26px;
     letter-spacing: 2px;
     text-align: left;
-   /*padding: 0px 305px 10px 315px; */
     font-weight: 300;
-}
 
-.author__section {
+}  
+
+.author {
     display: flex;
-    padding-top: 100px;
-
+    margin-top: 157px;
+    margin-bottom: 10px;
+  
 }
-
 .author__img {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-
+  
 }
+
+
 
 .author__info {
     margin-left: 10px;
+    color: var(--white);
+  
 }
 
 .author__name {
-    vertical-align: top;
+
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 2px;
     text-align: left;
-    color: var(--header-text-color);
-    font-weight: 700;
-    padding: 4px;
+    margin:1px;
+    font-weight: 600;
 }
 
 .author__quote {
-    display: inline-block;
+ 
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0px;
     text-align: left;
-    color: var(--header-text-color);
-    padding: 4px;
+    margin-bottom: 0px;
+
+}
+.author__links {
+    margin-bottom: 0px;
+    text-align: center;
+
+    
 }
 
-.author__icons {
+.author__links ul{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     column-gap: 20px;
-    padding: 5px;
-    color: var(--header-text-color);
+    padding: 2px;
+   
 }
 
-section {
-    width: 770px;
-    height: 1356px;
-    margin: auto;
-
+.author__links li {
+    list-style:none;
+    
 }
 
-h2 {
+.author__links li a {
+    color: var(--white);
+    
+}
+
+.main{
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.main__title{
+
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4000000059604645px;
     text-align: left;
-    color: var(--section-title-color);
-    margin-top: 80px;
+    color:var(--text-color)
+ 
 }
 
-.section__text {
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: left;
-    color:var(--section--text-color)
+.main {
+   
+    max-width: 770px;
+    margin: 0 auto;
 }
 
-h3 {
-    margin-top: 40px;
+
+.main__text {
+    color: var(--gray);
+}
+
+.main__subheading {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 0px;
     text-align: left;
-    color: var(--section-title-color)
-
+    color: var(--text-color)
 }
 
-.section__photo {
-    width: 770px;
-    height: 430px;
+.main__img {
+    display: block;
+    width: 100%;
+ 
 }
 
-.section__label {
-
+.desc {
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 2px;
     text-align: left;
-    color: var(--section--text-color);
-    font-weight: 600;
+    font-weight: 800;
+    color: var(--gray);
+
 }
 
-h4 {
-    margin-top: 40px;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: var(--section-title-color);
-    font-weight: 500;
+
+.list ul {
+    list-style: none;
+  
+    padding-right: 30px;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    color: var(--section-title-color);
+.list ul li {
+    color:var(--text-color);
+ 
+   
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding: 20px;
+   
 }
 
-.article__first {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-}
-
-.article__second {
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
+.list ul li i {
+    margin-right:  20px;
+    
 }

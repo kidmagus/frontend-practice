@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+:root {
+    --blue-text-color:  #1E0E62;
+    --white: #FFFFFF;
+    --gray: #15143966;
+
+}
+
