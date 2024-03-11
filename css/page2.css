@@ -119,9 +119,9 @@ body {
 }
 
 
-aside {
+.aside {
     max-width: 378px;
-    
+    width: 100%;
 }
 
 
