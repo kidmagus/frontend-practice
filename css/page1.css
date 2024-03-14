@@ -9,8 +9,6 @@ header {
     color: var(--white);
     background-color:var(--purple);
     display: flex;
-    padding: 0px;
-
   }
 
 @media screen and (max-width: 768px){
