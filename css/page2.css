@@ -24,19 +24,7 @@ aside {
     max-width: 498px;
 }
 
-@media screen and (max-width: 768px) {
 
-     .container{
-        display: block;
-        margin: 0 auto;
-     }
-
-     header {
-        flex-direction: column; 
-     }
-
-     
-} 
     
 .post {
     display: flex;
@@ -77,6 +65,8 @@ aside {
     border-radius: 20px;
     padding: 12px 0px 12px 24px;
     font-weight: 500;
+    width: 100%;
+    
 }
 
 .form__btn {
@@ -115,3 +105,23 @@ aside {
 .load__btn:hover{
     background-color: #a32857;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .container{
+       display: block;
+       margin: 0 auto;
+    }
+
+    header {
+       flex-direction: column; 
+    }
+
+    .form {
+       display: block;
+       margin: 0 auto;
+    }
+
+    
+} 
