@@ -108,6 +108,7 @@ nav li {
 }
 
 nav li a {
+  color: var(--dark);
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
