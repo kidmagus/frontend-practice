@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     font-family: "Overpass", sans-serif;
     /*background-color: #BCF4DE;  */
-    height: 2200px;
+    
 }
 
 :root {
@@ -98,6 +98,7 @@ h3 {
   justify-content: center;
   margin: 10px 10px;
   border-top: 1px solid var(--gray);
+  
 }
 
 @media screen and (max-width: 760px) {
