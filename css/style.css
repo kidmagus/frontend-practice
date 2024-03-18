@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     font-family: "Overpass", sans-serif;
     /*background-color: #BCF4DE;  */
+    height: 2200px;
 }
 
 :root {
@@ -70,12 +71,20 @@ h3 {
   flex-direction: row;
   align-items: center;
   column-gap: 300px;
-
   padding: 50px;
-
-  
 }
 
+@media screen and (max-width: 768px) {
+  .test {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile__info {
+    text-align: center;
+  }
+}
 
 .test img {
   display: block;
@@ -101,6 +110,7 @@ h3 {
   border-top: 1px solid var(--gray);
 }
 
+
 main, aside {
   padding: 20px;
   
@@ -117,19 +127,13 @@ aside {
   border-radius: 20px;
 }
 
-
-
 .aside__content {
-
   display: flex;
   flex-direction:column;
   align-items: center;
   justify-content: center; 
-
-
+  text-align: center;
 }
-
-
 
 aside ul {
  
@@ -144,5 +148,14 @@ aside ul li {
 aside ul li a {
   text-decoration: none;
   color: black;
+  
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    margin-bottom: 50px;
+  }
+
   
 }
