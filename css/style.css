@@ -1,54 +1,146 @@
 body {
-
     margin: 0 auto;
+    font-family: "Overpass", sans-serif;
+    /*background-color: #BCF4DE;  */
+}
+
+:root {
+  --gray:gray;
+  --darkred: #2F0E11;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px 5px 25px;
+ /* background-color: #BCF4DE; */
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 60px;
+  list-style: none;
+}
+
+ nav ul li a {
+  text-decoration:  none;
+  color: black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1;
+  color: var(--darkred);
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 1;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.profile {
+ background-color: #CDE5D7; 
+ 
 }
 
 
+.test{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 300px;
+
+  padding: 50px;
+
+  
+}
+
+
+.test img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+}
+
+.contact__btn {
+  margin-top: 20px;
+  background-color: #EEC6CA;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  color: black;
+  font-size: 18px;
+}
 
 .container {
-  
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 30px 20px 30px;
-    position: absolute;
-    top: 10%;
-    left: 43%;
-    background-color:#9AE5E6;
-    border: none;
-    border-radius: 20px;
-    
-}   
-
-ul {
-
-   display: flex;
-   flex-direction: column;
-   padding: 0;
-   list-style-type: none;
-
-  }
-
-li {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 25px 10px 10px;
-    line-height: 20px;
- 
-    text-align: center;
-    
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  border-top: 1px solid var(--gray);
 }
+
+main, aside {
+  padding: 20px;
   
-li a {
-    color: var(--blue-text-color);
-    font-weight: 600;
-    list-style-type: none;
-    text-decoration: none;
-  }
+}
+
+main {
+  flex: 2;
+}
+
+aside {
+  flex: 0.5;
   
-li a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
+}
+
+
+
+.aside__content {
+
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center; 
+
+
+}
+
+
+
+aside ul {
+ 
+  padding: 0;
+  list-style-type: none;
+}
+
+aside ul li {
+  padding: 15px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: black;
   
+}
