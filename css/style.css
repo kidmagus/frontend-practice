@@ -97,7 +97,7 @@ h3 {
 .container {
   display: flex;
   justify-content: center;
-  padding: 10px 10px;
+  margin: 10px 10px;
   border-top: 1px solid var(--gray);
 }
 
@@ -112,7 +112,9 @@ main {
 
 aside {
   flex: 0.5;
-  
+  background-color: #86BBD8;
+  align-self: center;
+  border-radius: 20px;
 }
 
 
