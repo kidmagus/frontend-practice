@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hidden-content {
+            display: none;
+        }
+
+        .reveal-btn {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal Button</button>
+        <div class="hidden-content boxes">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda qui perspiciatis explicabo voluptas eius, obcaecati earum mollitia dolor nemo ipsam!
+        </div>
+    </div>
+
+    
+    <script>
+        const revealBtn = document.querySelector('.reveal-btn');
+
+        const hiddenContent = document.querySelector('.hidden-content');
+
+        function revealContent (){
+
+            if (hiddenContent.classList.contains('reveal-btn')){
+                hiddenContent.classList.remove('reveal-btn')
+            }   else    {
+                hiddenContent.classList.add('reveal-btn');
+            }
+        }
+
+
+        revealBtn.addEventListener('click', revealContent);
+
+
+
+
+    </script>
+</body>
+</html>

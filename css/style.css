@@ -154,11 +154,44 @@ aside ul li a {
   
 }
 
+
+
 @media screen and (max-width: 1280px) {
   .container {
     display: block;
-    margin-bottom: 50px;
+  
   }
 
+
+
+}
+
+footer {
+  background-color:  #86BBD8;;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+ 
+} 
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  padding: 35px;
+  border:  2px solid red;
   
+}
+
+.form input {
+  min-height: 24px;
+  min-width: 500px;
+ 
 }
