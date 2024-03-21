@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+    }
+
+    .box__header,
+    .box__content {
+      padding: 15px 20px;
+    }
+
+    .box__header {
+      cursor: pointer;
+      background-color: grey;
+      margin: 0;
+      transition: all 0.25s;
+      width: 100%;
+    }
+
+    .box__icon {
+      display: inline-block;
+      transition: transform 0.25s;
+     
+    }
+
+    .box__header:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .box__content {
+      display: none;
+    }
+
+    .box--expanded .box__icon {
+      transform: rotate(90deg);
+    }
+
+    .box--expanded .box__content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2 class="box__header">
+      Item 1
+      <span class="box__icon">></span>
+    </h2>
+
+    <div class="box__content">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloremque.</p>
+    </div>
+  </div>
+
+  
+  <div class="box">
+    <h2 class="box__header">
+      Item 2
+      <span class="box__icon">></span>
+    </h2>
+
+    <div class="box__content">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloremque.</p>
+    </div>
+  </div>
+
+  
+  <div class="box">
+    <h2 class="box__header">
+      Item 3
+      <span class="box__icon">></span>
+    </h2>
+
+    <div class="box__content">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloremque.</p>
+    </div>
+  </div>
+
+  <script>
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach((box) => {
+      const header = box.querySelector(".box__header");
+
+      if(header) {
+        header.addEventListener("click", (event) => {
+          box.classList.toggle("box--expanded");
+        });
+      }
+    });
+  </script>
+</body>
+</html>
