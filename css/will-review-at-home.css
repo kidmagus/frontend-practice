@@ -2,7 +2,7 @@
     display: none;
      }
    
-   .active[data-tab-content] {
+.active[data-tab-content] {
    display: block;
    }
    
