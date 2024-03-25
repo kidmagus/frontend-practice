@@ -6,27 +6,35 @@
     <title>Tabs</title>
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="container">
         <h1>Settings</h1>
         <ul>
-            <li>Plan</li>
-            <li>Security</li>
-            <li>Notifications</li>
+            <li data-tab-target="plan">Plan</li>
+            <li data-tab-target="security">Security</li>
+            <li data-tab-target="notif">Notifications</li>
         </ul>
     </div>
 
 
 
-    <div class="tab-content">
-          <div>
-             <h1>Plan</h1>
-             <p> Welcome Home</p>
+    <div class="tab__content">
+          <div data-nav="plan">
+             <h2>Plan</h2>
+             <p>Welcome Home</p>
          </div>
+         <div data-nav="security">
+            <h2>Security</h2>
+            <p> Welcome Home</p>
+        </div>
+        <div data-nav="notif">
+            <h2>Notifications</h2>
+            <p> Welcome Home</p>
+        </div>
     </div>
 
     <script src="js/tabs.js"></script>

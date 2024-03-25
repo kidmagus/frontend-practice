@@ -57,7 +57,12 @@ h5 {
     justify-content: space-between;
     align-items: center;
     margin:2px;
+    cursor: pointer;
 }
+
+
+
+
 
 .content {
     display: none;   
@@ -75,7 +80,13 @@ button {
     cursor: pointer; 
 }
 
-button:hover {
+button:hover  {
+    background-color: var(--light-blue);
+    color: #FFFFFF;
+    border: none;
+}
+
+.box__info:hover button {
     background-color: var(--light-blue);
     color: #FFFFFF;
     border: none;

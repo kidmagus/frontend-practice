@@ -1,23 +1,34 @@
 
-// const button = document.querySelectorAll('li');
+// Variable for the each divs and li //
+const tabTarget = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-nav]');
 
 
-// let clickEvent = () => {
-//   button.style.backgroundColor = 'red';
-// }
+//For Loop // Get Attri of each target ..
+tabTarget.forEach(tabTargets => {
+    const target = tabTargets.getAttribute('data-tab-target');
+    const targetContent = document.querySelector(`[data-nav="${target}"]`);
+   
+  
+// Function for Displaying the Content
+    tabTargets.addEventListener("click", () => {
 
-// button.forEach((item) => {
-//     item.addEventListener('click', clickEvent);
-// })
+        tabTarget.forEach(t => {
+            t.classList.remove('active')
 
-// const buttons = document.querySelectorAll('li');
+        }); 
+          
+       
+        tabContents.forEach(c => {
+            c.classList.remove('active');
+        });
 
-// let clickEvent = (event) => {
-// //   event.target.style.backgroundColor = 'red';
-//   event.target.style.borderBottom = '2px solid red';
-// }
 
-// buttons.forEach((item) => {
-//     item.addEventListener('click', clickEvent);
-// });
+    
+        targetContent.classList.add('active');
+        tabTargets.classList.add('active');
+        
+    })
+})
+
 

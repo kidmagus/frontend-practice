@@ -97,7 +97,7 @@ tabs.forEach(tab  => {
         
         tabs.forEach(t => {
             t.classList.remove('active')
-        });
+        }); 
           
        
         tabContents.forEach(c => {

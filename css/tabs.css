@@ -2,26 +2,43 @@
     box-sizing: border-box;
 }
 
+[data-nav] {
+    display: none;
+}
+   
+
+[data-nav].active {
+     display: block;
+ }
+
+[data-tab-target].active  {
+    border-bottom: 2px solid rgb(3, 66, 87);
+    color: rgb(3, 66, 87);
+    margin-bottom: -1px;
+    font-weight: 400;
+}
+
+
+
 body {
     margin: 0;
     font-family: "DM Sans", sans-serif;
+   
 }
 
+.container, .tab__content {
+    margin: 20px 20px;
+
+}
 
 .container {
     border-bottom: 2px solid gray;
-    padding: 15px;
-}
-
-h1 {
-    font-size: 24px;
-    line-height: 1.5;
+     
 }
 
 
 ul {
     display: flex;
-    flex-direction: row;
     column-gap: 20px;
     padding: 0;
     margin-bottom: 0;
@@ -30,13 +47,9 @@ ul {
 li {
     list-style: none;
     cursor: pointer;
-    font-size: 18px;
     line-height: 1.625;
-    transition: 1s;
-
+    color: gray;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
-
-li:hover {
-    border-bottom: 2px solid red;
-}

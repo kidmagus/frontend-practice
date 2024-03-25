@@ -1,10 +1,10 @@
 const box = document.querySelectorAll('.box');
 
 box.forEach((box) => {
-    const onToggle = box.querySelector('button')
+    const boxInfo = box.querySelector('.box__info')
 
-    if (onToggle){
-        onToggle.addEventListener("click", (event) =>{
+    if (boxInfo){
+        boxInfo.addEventListener("click", (event) =>{
         box.classList.toggle('expanded');
         });
 
