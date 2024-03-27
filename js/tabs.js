@@ -1,13 +1,13 @@
 
 // Variable for the each divs and li //
 const tabTarget = document.querySelectorAll('[data-tab-target]');
-const tabContents = document.querySelectorAll('[data-nav]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
 
 
 //For Loop // Get Attri of each target ..
 tabTarget.forEach(tabTargets => {
     const target = tabTargets.getAttribute('data-tab-target');
-    const targetContent = document.querySelector(`[data-nav="${target}"]`);
+    const targetContent = document.querySelector(`[data-tab-content="${target}"]`);
    
   
 // Function for Displaying the Content

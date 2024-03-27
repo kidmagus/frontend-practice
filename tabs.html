@@ -11,27 +11,29 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>Settings</h1>
         <ul>
-            <li data-tab-target="plan">Plan</li>
-            <li data-tab-target="security">Security</li>
-            <li data-tab-target="notif">Notifications</li>
+            <li class="header__tab" data-tab-target="plan">Plan</li>
+            <li class="header__tab" data-tab-target="security">Security</li>
+            <li class="header__tab" data-tab-target="notif">Notifications</li>
         </ul>
     </div>
 
 
 
-    <div class="tab__content">
-          <div data-nav="plan">
-             <h2>Plan</h2>
-             <p>Welcome Home</p>
+    <div class="tab">
+          <div class="tab__content" data-tab-content="plan">
+             <div class="tab__content plan">
+                <div></div>
+                <div></div>
+             </div>
          </div>
-         <div data-nav="security">
+         <div class="tab__content"  data-tab-content="security">
             <h2>Security</h2>
             <p> Welcome Home</p>
         </div>
-        <div data-nav="notif">
+        <div class="tab__content"   data-tab-content="notif">
             <h2>Notifications</h2>
             <p> Welcome Home</p>
         </div>
