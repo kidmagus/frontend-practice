@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    
+}
+
+.counter {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.counter , .btnContainer,.btnContainer button {
+    padding: 15px;
+    margin: 10px;
+    
+}
+
+button {
+    background-color: hsl(214,100%, 74%);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+button:hover {
+    background-color: hsl(214,100%, 56%);
+}
+
