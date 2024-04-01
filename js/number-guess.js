@@ -41,6 +41,8 @@ while (game){
     guess = window.prompt(`Enter a number between ${min} and ${max}`);
     guess = Number(guess);
 
+    
+
     if (isNaN(guess) || guess < min || guess > max){
         window.alert(`Enter a VALID number between ${min} and ${max}`)
     } else {
@@ -55,3 +57,5 @@ while (game){
         }
     }
 }
+
+

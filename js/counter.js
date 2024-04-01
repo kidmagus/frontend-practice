@@ -23,4 +23,19 @@ increase.addEventListener("click", () =>{
 })
 
 
+let symbol = "#";
+let number = 0;
+
+while(number < 4){
+    console.log(symbol);
+    symbol = symbol + "#";
+    number = number + 1;
+};
+
+
+
+for (let i = 0; i <= 8; i++) {
+	let str = "* ";
+	console.log(str.repeat(i));
+}
 

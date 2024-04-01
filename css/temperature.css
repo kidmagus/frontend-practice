@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.container {
+  padding: 15px;
+  background-color: hsl(214,100%, 74%);
+  margin: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px hsla(0, 0%,0%,30%);
+}
+
+label , input {
+    margin-bottom: 20px;
+}
+
+input, .convert {
+    cursor: pointer;
+}
+
+.number {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+}
+
+.convert {
+    font-size: 20px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.result {
+    font-weight: 800;
+    font-size: 30px;
+    color:brown
+}
