@@ -1,20 +1,25 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+  
 }
 
 .container {
-  padding: 15px;
-  background-color: hsl(214,100%, 74%);
-  margin: auto;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px hsla(0, 0%,0%,30%);
+    position: absolute;
+    left: 40%;
+    top:30%;
+    padding: 15px;
+    background-color: hsl(214,100%, 74%);
+    margin: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px hsla(0, 0%,0%,30%);
 }
 
 label , input {
