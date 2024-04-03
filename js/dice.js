@@ -9,14 +9,18 @@ rollDice.addEventListener("click", () => {
 
     numDice = dice.value;
 
+    if (numDice.length === 0){
+        window.alert("You must choose how many dice you want")
+    }
+
     for (let i = 0; i < numDice; i++){
         const value = Math.floor(Math.random()* 6) + 1;
         values.push(value)
         img.push(`<img src="img/${value}.png">`)
+        result.textContent = `Dice: ${values.join(', ')}`
+        diceImg.innerHTML = img.join('');
     }
-
-    result.textContent = `dice: ${values.join(', ')}`
-    diceImg.innerHTML = img.join('');
+  
 })
 
 console.log(img)
