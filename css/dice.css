@@ -2,3 +2,60 @@
     width: 150px;
     margin: 5px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 1050px;
+}
+
+
+.container {
+    padding: 20px; 
+    background-color: green;
+    overflow: auto;
+}
+
+.container + .container {
+    background-color: red;
+}
+
+.container input {
+    font-size: 24px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.container h1 {
+    font-size:36px;
+    font-weight: 600;
+    color: white;
+}
+
+.container button {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: hsl(214,100%, 74%);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: hsl(214,100%, 56%);
+}
+
+
+
+

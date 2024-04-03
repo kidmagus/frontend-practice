@@ -25,8 +25,8 @@ console.log(img)
 
 
 const oneDice = document.querySelector(".oneDice__btn")
-const oneDiceResult = document.querySelector(".onedice__result")
-const oneDiceImg = document.querySelector(".onedice__images");
+const oneDiceResult = document.querySelector(".oneDice__result")
+const oneDiceImg = document.querySelector(".oneDice__images");
 
 oneDice.addEventListener("click", () => {
     const randomDice = Math.floor(Math.random()*6)+1;

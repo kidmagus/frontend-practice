@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
     <link rel="stylesheet" href="css/dice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input type="number" class="dice__txtbox" />
-    <button class="dice__btn">Roll Dice</button>
-    <p class="dice__result"></p>
 
-    <div class="dice__images"></div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <button class="oneDice__btn">Roll Dice</button>
-    <p class="onedice__result"></p>
-
-    <div class="onedice__images"></div>
+    <div class="wrapper">
+        <div class="container">
+            <input type="number" class="dice__txtbox" />
+            <button class="dice__btn">Roll Dice</button>
+            <h1 class="dice__result"></h1>
+            <div class="dice__images"></div>
+        </div>
+        
+    
+      
+        <div class="container">
+            <button class="oneDice__btn">Roll Dice</button>
+            <h1 class="oneDice__result"></h1>
+            <div class="oneDice__images"></div>
+        </div>
+    
+    </div>
+  
     <script src="js/dice.js"></script>
 </body>
 </html>
