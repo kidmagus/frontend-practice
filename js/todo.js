@@ -12,10 +12,12 @@ todoBtn.addEventListener("click", () => {
     // Get the value on textbox
     const addedTodo = todo.value; 
 
+
     // CreateDiv for every enlisted item
     const todoContent = document.createElement("p");
     todoContent.textContent = addedTodo;
-    todoContent.className += "todo__content"
+    todoContent.className += "todo__content";
+  
 
     const todoContainer = document.createElement("div");
     todoContainer.className += "todo__container";
@@ -55,11 +57,13 @@ todoBtn.addEventListener("click", () => {
     //Reset the textbox
     todo.value = '';
 
-
+    
     //For debugs
     console.log(todoContent)
     console.log(todoArr)
 })
+
+
     
 
 todo.addEventListener("keypress", function(event){
