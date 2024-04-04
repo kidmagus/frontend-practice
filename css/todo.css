@@ -4,6 +4,36 @@
     padding: 0;
 }
 
+.todo__content.active__content {
+    text-decoration: line-through;
+    opacity: 0.8;
+    color: white
+}
+
+
+.todo__delete-btn.active__deletebtn {
+    background-color: white;
+    color: maroon;
+} 
+
+.todo__done-btn.active__donebtn{
+    background-color: orange;
+  
+}
+
+.todo__container.active__container {
+    background: none;
+    background-color: maroon;
+  
+}
+
+
+
+
+
+
+
+
 body {
     font-family: "Montserrat", sans-serif; 
     font-size: 28px;
@@ -34,17 +64,23 @@ button {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.25986078886310904) 0%, rgba(138,143,236,1) 0%, rgba(0,212,255,1) 100%);
 }
 
+
+
 .todo__container {
     border-radius: 10px;
     display: grid;
-    column-gap: 30px;
-    grid-template-columns: 2fr 0fr;
+    column-gap: 5px;
+    grid-template-columns: 1fr 0fr 0fr;
     padding: 8px;
     margin-bottom: 4px;
-    background: rgb(2,0,36);
+
+    background-color: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.25986078886310904) 0%, rgba(132,224,96,1) 0%, rgba(35,185,215,1) 0%, rgba(100,221,134,1) 98%);
-     align-items: center;
+
+    align-items: center;
 }
+
+
 
 .todo__content {
    width: 100%;
@@ -56,6 +92,7 @@ button {
 
 .todo__txtbox{
     font-size: 24px;
+    border-radius: 10px;
     text-align: center;
     margin: 16px;
     height: 40px;
@@ -67,16 +104,29 @@ button {
 
 
 .todo__submit-btn {
-    margin-left: -25px;
+    margin-left: -30px;
+    border-radius: 6px;
     font-size: 24px; 
-   background-color: lightgreen;
+    background-color:green;
+    color: white;
 }
+
+.todo__done-btn{
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    background-color:green;
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px;
+}
+
+
+    
 
 .todo__delete-btn {
     border-radius: 10px;
     color: white;
     font-size: 20px;
-    background-color: red;
+    background-color: maroon;
 }
-
-

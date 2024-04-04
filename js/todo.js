@@ -21,7 +21,36 @@ todoBtn.addEventListener("click", () => {
 
     const todoContainer = document.createElement("div");
     todoContainer.className += "todo__container";
-  
+
+    const doneBtn = document.createElement("button");
+    doneBtn.innerHTML = "&#10004; DONE"
+    doneBtn.className += "todo__done-btn";
+
+    doneBtn.addEventListener("click", () => {
+        
+
+
+        if ( doneBtn.classList.contains('active__donebtn')){
+            deleteBtn.classList.remove('active__deletebtn')
+            doneBtn.classList.remove('active__donebtn')
+            doneBtn.innerHTML = "&#10004; DONE"
+            todoContent.classList.remove('active__content') 
+            todoContainer.classList.remove('active__container')
+ 
+        } else {
+            deleteBtn.classList.add('active__deletebtn')
+            doneBtn.classList.add('active__donebtn')
+            doneBtn.innerHTML = "UNDO"
+            todoContent.classList.add('active__content')
+            todoContainer.classList.add('active__container')
+           
+          
+         
+        }
+        
+    })
+   
+   
     
     // Create Btn and its Function
     const deleteBtn = document.createElement("button");
@@ -48,7 +77,9 @@ todoBtn.addEventListener("click", () => {
         //Append 
         todoList.appendChild(todoContainer)
         todoContainer.append(todoContent);
+        todoContainer.append(doneBtn);
         todoContainer.append(deleteBtn);
+        
         todoArr.push(addedTodo)
 
   
