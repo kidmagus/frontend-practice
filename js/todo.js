@@ -1,83 +1,70 @@
-
-
-const todo = document.querySelector(".txtbox");
-const todoBtn = document.querySelector(".submit");
+const todo = document.querySelector(".todo__txtbox");
+const todoBtn = document.querySelector(".todo__submit-btn");
 const todoList = document.querySelector(".todoList");
-
+//Array for every enlited item
 let todoArr = [];
 
+
+
+
 todoBtn.addEventListener("click", () => {
-    // const addedTodo = todo.value;
+ 
+    // Get the value on textbox
+    const addedTodo = todo.value; 
+
+    // CreateDiv for every enlisted item
+    const todoContent = document.createElement("p");
+    todoContent.textContent = addedTodo;
+    todoContent.className += "todo__content"
+
+    const todoContainer = document.createElement("div");
+    todoContainer.className += "todo__container";
+  
     
-    // const listItem = document.createElement("li");
-    // listItem.textContent = addedTodo;
-
-    // const btnDelete = document.createElement("button");
-    // btnDelete.textContent = "Delete";
-    // btnDelete.addEventListener("click", () => {
-    //     // Remove the parent <li> element when the delete button is clicked
-    //     listItem.remove();
-    //     // Remove the deleted item from the todoArr
-    //     const index = todoArr.indexOf(addedTodo);
-    //     if (index !== -1) {
-    //         todoArr.splice(index, 1);
-    //         console.log(todoArr);
-    //     }
-    // });
-
-    // listItem.appendChild(btnDelete);
-
-    // todoList.appendChild(listItem);
-
-    // todoArr.push(addedTodo);
-    
-    // // Clear the input field after adding the to-do item
-    // todo.value = '';
-
-    // console.log(todoArr);
-    const addedTodo = todo.value;
-    
-    
-   
-    
-   
-    const todoItem = document.createElement("p");
-    todoItem.textContent = addedTodo;
-
+    // Create Btn and its Function
     const deleteBtn = document.createElement("button");
-    deleteBtn.innerHTML = "Delete";
-    deleteBtn.className += "deleteBtn"
+    deleteBtn.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+    deleteBtn.className += "todo__delete-btn";
+
     deleteBtn.addEventListener("click", () => {
-        todoItem.remove();
-        const index = todoArr.indexOf(addedTodo);
-        if (index !== 0){
-            todoArr.splice(index, 1);
-            console.log(todoArr)
-        }
+      todoContainer.remove();
+      const index = todoArr.indexOf(addedTodo);
+    //Checks if the element or substring was found
+      if (index !== -1){
+        todoArr.splice(index, 1);
+      }
     })
 
-    if (addedTodo.length === 0){
-        window.alert ("You need a Todo Item first")
-        
-    }else {
-        //Joining the button to the new item Element
-        todoItem.appendChild(deleteBtn);
 
-        //Appending the delBtn along with the text.value to Page
-        todoList.appendChild(todoItem);
 
-        // Pushing the value to Array
-        todoArr.push(addedTodo);
+
+    // If textbox has no content and proceed to click the "Add-Btn"
+    if(addedTodo.length === 0){
+        window.alert ("Insert a To Do first")
+        return
+    } else {
+        //Append 
+        todoList.appendChild(todoContainer)
+        todoContainer.append(todoContent);
+        todoContainer.append(deleteBtn);
+        todoArr.push(addedTodo)
+
+  
+    
     }
-
-
- 
-
+    //Reset the textbox
     todo.value = '';
-    console.log(todoArr);
-    console.log(todoList);
+
+
+    //For debugs
+    console.log(todoContent)
+    console.log(todoArr)
+})
     
 
-
-});
+todo.addEventListener("keypress", function(event){
+    if (event.key === "Enter"){
+        todoBtn.click();
+    }
+})
 
