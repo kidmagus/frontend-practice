@@ -1,7 +1,7 @@
 const todo = document.querySelector(".todo__txtbox");
 const todoBtn = document.querySelector(".todo__submit-btn");
 const todoList = document.querySelector(".todoList");
-//Array for every enlited item
+//Array for every enlisted item
 let todoArr = [];
 
 
@@ -46,7 +46,7 @@ todoBtn.addEventListener("click", () => {
            
           
          
-        }
+        } 
         
     })
    
@@ -102,4 +102,5 @@ todo.addEventListener("keypress", function(event){
         todoBtn.click();
     }
 })
+
 

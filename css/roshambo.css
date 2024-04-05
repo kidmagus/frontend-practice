@@ -1,0 +1,103 @@
+* {
+    box-sizing:  border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+
+
+.choices {
+    background-color: #ECA400;
+
+}
+
+.choices button , .reset {
+    opacity: 0.9;
+    transform: 0.8;
+    cursor: pointer;
+
+}
+  
+.choices button{
+    font-size: 12rem;
+    background-color:#EAF8BF;
+    color:#006992;
+    border: none;
+    width: 300px;
+    border-radius:50%;
+    padding: 15px;
+    margin: 20px;
+  
+}
+
+.choices button:hover {
+    opacity: 1;
+    background-color: white;
+    
+}
+
+.container {
+    background-color: #ECA400;
+    padding: 20px;
+}
+
+.wrapper *  {
+    
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 auto;
+   
+    font-size: 2rem;
+   
+}
+
+.moveDisplay__container {
+    background-color: #EAF8BF;
+}
+
+.moveDisplay__container div{
+    padding: 10px;
+}
+
+.moveDisplay__result{
+    font-weight: 700;
+}
+
+.moveDisplay__player , .moveDisplay__computer, .scoreDisplay__container {
+    color: #720092;
+}
+
+ .scoreDisplay__container{
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: greenyellow;
+}
+
+.redText {
+    color: red;
+}
+
+.greenText {
+    color: green;
+}
+
+.reset {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+    padding: 8px;
+    
+}
+
+.reset:hover {
+    opacity: 1;
+    background-color: rgb(5, 153, 5)
+}
