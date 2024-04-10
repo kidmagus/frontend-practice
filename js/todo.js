@@ -2,30 +2,37 @@ const todo = document.querySelector(".todo__txtbox");
 const todoBtn = document.querySelector(".todo__submit-btn");
 const todoList = document.querySelector(".todoList");
 //Array for every enlisted item
-let todoArr = [];
 
 
 
 
+    let todoArr = JSON.parse(localStorage.getItem('todos'))
+
+    document.body.append(todoArr)
+    
+
+    
 todoBtn.addEventListener("click", () => {
  
     // Get the value on textbox
+  
     const addedTodo = todo.value; 
-
+  
 
     // CreateDiv for every enlisted item
     const todoContent = document.createElement("p");
     todoContent.textContent = addedTodo;
     todoContent.className += "todo__content";
-  
+    
 
     const todoContainer = document.createElement("div");
     todoContainer.className += "todo__container";
 
+
+
     const doneBtn = document.createElement("button");
     doneBtn.innerHTML = "&#10004; DONE"
     doneBtn.className += "todo__done-btn";
-
     doneBtn.addEventListener("click", () => {
         
 
@@ -43,9 +50,7 @@ todoBtn.addEventListener("click", () => {
             doneBtn.innerHTML = "UNDO"
             todoContent.classList.add('active__content')
             todoContainer.classList.add('active__container')
-           
-          
-         
+
         } 
         
     })
@@ -74,20 +79,29 @@ todoBtn.addEventListener("click", () => {
         window.alert ("Insert a To Do first")
         return
     } else {
-        //Append 
-        todoList.appendChild(todoContainer)
+        // Append 
+
+        todoList.append(todoContainer)
         todoContainer.append(todoContent);
         todoContainer.append(doneBtn);
         todoContainer.append(deleteBtn);
-        
-        todoArr.push(addedTodo)
-
-  
-    
+        todoArr.push(addedTodo);
+       
+         localStorage.setItem("todos", JSON.stringify(todoArr));
+       
+      
+       
     }
+
+   
+
+    
+    
+    
+  
     //Reset the textbox
     todo.value = '';
-
+    
     
     //For debugs
     console.log(todoContent)

@@ -8,11 +8,8 @@ body {
     text-align: center;
 }
 
-
-
 .choices {
     background-color: #ECA400;
-
 }
 
 .choices button , .reset {
@@ -46,12 +43,10 @@ body {
 }
 
 .wrapper *  {
-    
     max-width: 500px;
     border-radius: 15px;
     padding: 20px;
     margin: 0 auto;
-   
     font-size: 2rem;
    
 }
