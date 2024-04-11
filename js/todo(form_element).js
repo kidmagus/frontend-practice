@@ -1,44 +1,64 @@
-const form = document.querySelector(".todo")
-const todo = document.querySelector(".todo__txtbox")
-const todoSubmit = document.querySelector(".todo__submit");
-const todoList = document.querySelector(".todo__list")
+
+
+const form = document.querySelector(".todo");
+const todoInput = document.querySelector(".todo__txtbox");
+const todoList = document.querySelector(".todo__list");
 
 let todoArr = JSON.parse(localStorage.getItem("items")) || [];
 
-
 const updateLocalStorage = () => {
-    // let data = localStorage.getItem('items');
+    localStorage.setItem("items", JSON.stringify(todoArr));
 
-    // let parsedData = JSON.parse(data);
+};
 
-    // console.log(data);
-    // console.log(parsedData)
+
+const renderElement = () => {
+
+    todoList.innerHTML = " ";
  
-    localStorage.setItem("items", JSON.stringify(todoArr))
-   
-}
-    
-const p = document.createElement("p");
-p.textContent= "todoContent";
-todoList.appendChild(p)
-
-form.addEventListener("submit", (event) => {
-   
-
-    event.preventDefault();
-    const todos = new FormData(form);
-    const todoContent = todos.get("todos");
-    
-    todoArr.push(todoContent);
-    // todoContent.append(todos)
-    // todoList.append(todoContent)
-   
-
   
-    updateLocalStorage();
 
-    console.log(todoArr);
+    todoArr.forEach((todoContent, index) => {
+        let addedTodo = document.createElement("p");
+        addedTodo.textContent = todoContent;
+        todoList.append(addedTodo);
 
-   
+        addedTodo.setAttribute("data-id", index)
+      
+
+        let deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "Delete";
+        addedTodo.append(deleteBtn)
+
+       
+        deleteBtn.addEventListener("click", () => { 
+                    todoArr.splice(index, 1);
+                    updateLocalStorage();
+                    todoList.removeChild(addedTodo);
+        })
+      
+    });
+      
+
+       
+}
+
+
+form.addEventListener("submit", event => {
+    event.preventDefault();
+    
+    const formData = new FormData(form);
+    const todoContent = formData.get("todos");
+
+ 
+        todoArr.push(todoContent);
+        todoList.append(todoContent);
+        updateLocalStorage();
+        
+        renderElement(todoContent);
+        todoInput.value = ""; 
+ 
 });
 
+
+renderElement();
