@@ -2,7 +2,7 @@
 
 const form = document.querySelector(".todo");
 const todoInput = document.querySelector(".todo__txtbox");
-const todoList = document.querySelector(".todo__list");
+const todoList = document.querySelector(".todos__list");
 
 let todoArr = JSON.parse(localStorage.getItem("items")) || [];
 
@@ -10,6 +10,8 @@ const updateLocalStorage = () => {
     localStorage.setItem("items", JSON.stringify(todoArr));
 
 };
+
+
 
 
 const renderElement = () => {
@@ -50,12 +52,16 @@ form.addEventListener("submit", event => {
     const formData = new FormData(form);
     const todoContent = formData.get("todos");
 
- 
+    if (todoContent.length === 0){
+        window.alert("Enter a To Do")
+        return
+    } else {
         todoArr.push(todoContent);
         todoList.append(todoContent);
         updateLocalStorage();
-        
         renderElement(todoContent);
+    }
+       
         todoInput.value = ""; 
  
 });
