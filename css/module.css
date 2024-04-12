@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.text__title {
+    font-size: 30px;
+}
+
+.text-accordion{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 900px;  
+    margin: 20px;
+    background-color: #C5FF95;
+}
+
+/* #9 and #10 for Layout */
+@media screen and (max-width:760px) {
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.stacked {
+    flex-direction: column;
+}
+
+
+.text-accordion > div {
+    width: 100%;
+    font-size: 26px;
+}
+
+
+.text  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px 16px;
+ 
+}
+
+.text, .box__info {
+    background-color:#FFEFEF;
+}
+
+/* #6 NO ACCORDION COMPONENT -- HORIZONTALLY CENTERED TEXT COMP  */
+  .alignment {
+    text-align: center;
+}
+
+.accordion, .text__btn {
+    background-color: #5DEBD7;
+}
+
+.text__btn{
+    padding: 10px 10px;
+    width: 90px;
+}
+
+button {
+    background: none;
+    display: inline-block;  
+}
+
+.box__info, button {
+    cursor: pointer;
+}
+
+.text-accordion > div, .text-accordion, .box__info {
+    border: 2px solid;
+}
+
+.box {
+    padding: 5px;
+    margin: 8px;
+}
+
+.box__info {
+    display: flex;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right: 10px;
+
+}
+
+.box__btn {
+    border: none;
+    font-size: 30px;
+
+}
+
+.content {
+    display: none;
+}
+
+
+.active .content{
+    display: block;
+}
+
+
+.active .box__btn {
+    transform: rotate(45deg);
+  }
+
+  
+ /* #8 SCRIPT FOR SINGLE COLLAPSIBLE ACCORDION */
+.expanded .content{
+    display: block;
+}
+
+.expanded .box__btn {
+    transform: rotate(45deg);
+}
+
+
+
+
+
+
+
