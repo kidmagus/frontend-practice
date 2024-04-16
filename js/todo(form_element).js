@@ -57,7 +57,6 @@ form.addEventListener("submit", event => {
         return
     } else {
         todoArr.push(todoContent);
-        todoList.append(todoContent);
         updateLocalStorage();
         renderElement(todoContent);
     }
