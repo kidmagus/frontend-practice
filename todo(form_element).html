@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo-- Form Element</title>
-</head>
-<body>
-    <form class="container todo">
+    <link rel="stylesheet" href="css/todo(form_element).css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="todo">
         <h1 class="todo__title">Todo App</h1>
-        <input type="text" name="todos"  placeholder="What to do?" class="todo__txtbox"/>
-        <button class="todo__submit">Submit</button>
-    </form>
-        <div class="todos__list"></div>
+        <div class="todo__inputted">
+          <input
+            type="text"
+            name="todos"
+            placeholder="What to do?"
+            class="todo__txtbox"
+          />
+          <button class="todo__submit">Submit</button>
+        </div>
+      </form>
+      <div class="todo__list"></div>
+    </div>
 
     <script src="js/todo(form_element).js"></script>
-</body>
+  </body>
 </html>

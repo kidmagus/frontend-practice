@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --light: #cefdff;
+  --lightviolet: #bbd5ed;
+  --violet: #a288e3;
+  --darkviolet: #38023b;
+  --red: red;
+  --white: white;
+  --green: green;
+}
+
+.container {
+  background-color: var(--darkviolet);
+  border-radius: 20px;
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: center;
+  border: 2px solid;
+  border-color: var(--violet);
+  border-radius: 30px;
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--violet);
+}
+
+.todo__inputted {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.todo__title {
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.todo__submit {
+  border-radius: 20px;
+  border: none;
+  width: 75px;
+  padding: 8px 15px;
+  background-color: var(--green);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.todo__txtbox {
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 220px;
+  padding: 10px 15px;
+}
+
+.todo__list {
+  background-color: var(--violet);
+  border: 2px solid;
+  border-color: var(--violet);
+  border-radius: 30px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.todo__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 14px;
+  background-color: var(--light);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 315px;
+  width: 100%;
+}
+
+.todo__deletebtn {
+  border-radius: 20px;
+  border: none;
+  width: 75px;
+  padding: 8px 15px;
+  background-color: var(--red);
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--white);
+}
