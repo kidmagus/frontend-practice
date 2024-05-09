@@ -11,8 +11,8 @@ body {
 :root {
   --light: #cefdff;
   --lightviolet: #bbd5ed;
-  --violet: #a288e3;
-  --darkviolet: #38023b;
+  /* --violet: #a288e3;
+  --darkviolet: #38023b; */
   --red: red;
   --white: white;
   --green: green;
