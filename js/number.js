@@ -40,6 +40,15 @@ submit.addEventListener("click", () => {
     }
   }
 
+  if (scoreVal === 0) {
+    statement.textContent = "Awts gege / reset mona!";
+    window.alert("Awts gege");
+    takes.textContent = "";
+    answerVal.textContent = "";
+    guess.value = " ";
+    score.textContent = 20;
+  }
+
   console.log(guessVal);
 });
 
