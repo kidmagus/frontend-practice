@@ -1,0 +1,22 @@
+.splide {
+  width: 500px;
+  margin: 0 auto;
+}
+.splide__slider {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* .splide__track {
+}
+
+.splide__list {
+}
+
+.splide__slide {
+} */
+
+img {
+  width: 100px;
+  height: 100px;
+}
